@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Summarizer</title>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <h1>News Summarizer</h1>
+    
+    <label for="newsUrl">Enter News URL:</label>
+    <input type="text" id="newsUrl" placeholder="Paste news link here">
+    <button onclick="summarizeNews()">Summarize</button>
+
+    <h2>Summary</h2>
+    <p id="summary"></p>
+    <h3>Translation (Summary)</h3>
+    <p id="summary_translation"></p>
+
+    <h2>Full Article</h2>
+    <p id="full_text"></p>
+    <h3>Translation (Full Article)</h3>
+    <p id="full_translation"></p>
+
+    <h2>Vocabulary</h2>
+    <ul id="vocabulary"></ul>
+</body>
+</html>
